@@ -19,7 +19,12 @@ DEBUG   = @clear ; gcc -pipe -std=c99 -D_POSIX_C_SOURCE=200112L -Wall -Wformat-s
 02:
 	$(COMPILE)
 
+.PHONY: 03
+03:
+	$(COMPILE)
+
 .PHONY: clean
 clean:
 	rm -f 01
 	rm -f 02
+	rm -f 03
